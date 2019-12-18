@@ -1,0 +1,39 @@
+//Student Table...................................................................
+CREATE TABLE student
+(student_ID int PRIMARY KEY,
+student_Name varchar(50),
+Stream varchar(20),
+Class varchar(20),
+Address varchar(200));
+
+
+//Books Table.....................................................................
+CREATE TABLE Books
+(Book_Id int PRIMARY KEY,
+Book_Name varchar(20),
+Author varchar(20),
+Stream varchar(20),
+Class varchar(20)
+Available varchar(20));
+
+
+//Issue Table....................................................................
+CREATE TABLE Issue
+(student_id int,
+student_name varchar(20),
+book_id  int,
+book_name varchar(20),
+Address varchar(200),
+Date date,
+stream varchar(20),
+class varchar(20));
+
+
+//Return_detail Table...........................................................
+CREATE TABLE returndetail
+(student_id int,
+student_name varchar(20),
+book_id int,
+book_name varchar(20),
+Issue_Date date,
+return_Date date);
